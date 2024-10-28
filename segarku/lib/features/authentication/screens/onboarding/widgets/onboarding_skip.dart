@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:segarku/features/authentication/controllers.onboarding/onboarding_controller.dart';
 
 import '../../../../../utils/constants/size.dart';
 import '../../../../../utils/device/device.dart';
@@ -13,7 +14,7 @@ class OnboardingSkip extends StatelessWidget {
     return Positioned(
       top: SDeviceUtils.getAppBarHeight(),
       right: SSizes.defaultSpace, 
-      child: TextButton(onPressed: (){}, child: const Text('Skip')),
+      child: TextButton(onPressed: () => OnboardingController.instance.skipPage(), child: const Text('Skip')),
     );
   }
 }

@@ -1,23 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:segarku/features/authentication/controllers.onboarding/onboarding_controller.dart';
+import 'package:segarku/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+import 'package:segarku/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:segarku/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
 import 'package:segarku/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:segarku/utils/constants/colors.dart';
 import 'package:segarku/utils/constants/image_strings.dart';
-import 'package:segarku/utils/constants/size.dart';
 import 'package:segarku/utils/constants/text_strings.dart';
-import 'package:segarku/utils/device/device.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(OnboardingController());
+
     return Scaffold(
       body: Stack(
         children: [
           // Horizontal Scrollable Pages
           PageView(
+            controller: controller.pageController,
+            onPageChanged: controller.updatePageIndicator,
             children: const[
               OnBoardingPage(
                 image: SImages.onBoardingImage1,
@@ -41,17 +45,10 @@ class OnBoardingScreen extends StatelessWidget {
           const OnboardingSkip(),
           
           // Dot Navigator SmoothPageIndicator
-          Positioned(
-            bottom: SDeviceUtils.getBottomNavigationBarHeight() + 25,
-            left: SSizes.defaultSpace,
-            child: SmoothPageIndicator(
-              controller: PageController(),
-              count: 3,
-              effect: const ExpandingDotsEffect(activeDotColor: SColors.dark, dotHeight: 6),
-            ),
-          )
+          const OnboardingDotNavigation(),
 
           // Circular Button
+          const OnBoardingNextButton(),
         ],
       ),
     );
