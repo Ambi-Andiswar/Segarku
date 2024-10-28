@@ -1,4 +1,5 @@
-/// List of Enums
+
+/// LIST OF Enums
 /// They cannot be creae inside a class.
 
 enum TextSizes { small, medium, large }

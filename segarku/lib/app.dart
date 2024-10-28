@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:segarku/features/authentication/screens/onboarding.dart';
+import 'package:segarku/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:segarku/utils/theme/theme.dart';
 
 class App extends StatelessWidget {
