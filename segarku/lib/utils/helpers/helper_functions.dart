@@ -23,7 +23,8 @@ class SHelperFunctions {
       return Colors.black;
     } else if (value == 'White') {
       return Colors.white;
-    } 
+    }
+    return null; 
   }
 
   static void showSnackBar(String massage) {
@@ -71,6 +72,10 @@ class SHelperFunctions {
 
    static Size screenSize() {
     return MediaQuery.of(Get.context!).size;
+   }
+
+  static double screenHeight(){
+    return MediaQuery.of(Get.context!).size.height;
    }
 
    static double screenWidth(){

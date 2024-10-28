@@ -32,8 +32,8 @@ class SHttpHelper {
   }
 
   // Helper methode to make a DELET request
-    static Future<Map<String, dynamic>> delet(String endpoint) async {
-    final response = await http.delet(Uri.parse('$_baseUrl/$endpoint'));
+    static Future<Map<String, dynamic>> delete(String endpoint) async {
+    final response = await http.delete(Uri.parse('$_baseUrl/$endpoint'));
     return _handleResponse(response);
   }
 
