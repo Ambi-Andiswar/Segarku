@@ -13,7 +13,7 @@ class SAppTheme {
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: 'Poppins',
+    fontFamily: 'Axiforma',
     brightness: Brightness.light,
     primaryColor: Colors.green,
     textTheme: STextTheme.lightTextTheme,
@@ -30,7 +30,7 @@ class SAppTheme {
 
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: 'Poppins',
+    fontFamily: 'Axiforma',
     brightness: Brightness.dark,
     primaryColor: Colors.green,
     textTheme: STextTheme.darkTextTheme,
