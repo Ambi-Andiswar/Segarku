@@ -3,10 +3,52 @@ import 'package:flutter/material.dart';
 class SColors{
   SColors._();
 
-  // App Basic Colors
-  static const Color primary = Color(0xFF00AA13);
-  static const Color secondary = Color(0xFF00AA13);
-  static const Color accent = Color(0xFF00AA13);
+  // Main Color
+  static const Color primary = Color(0xFF4DB251);
+  static const Color secondary = Color(0xFF16423C);
+  static const Color accent = Color(0xFF3F845F);
+
+  // Primary Colors
+  static const Color Green100 = Color(0xFFF3F8F3);
+  static const Color Green200 = Color(0xFFE4F0E4);
+  static const Color Green300 = Color(0xFFC5E0C6);
+  static const Color Green400 = Color(0xFFA0CFA2);
+  static const Color Green500 = Color(0xFF4DB251);
+  static const Color Green600 = Color(0xFF49A84C);
+  static const Color Green700 = Color(0xFF3F9142);
+  static const Color Green800 = Color(0xFF337736);
+  static const Color Green900 = Color(0xFF245426);
+
+  // Secondary Colors
+  static const Color BlackSoap100 = Color(0xFFF2F3F3);
+  static const Color BlackSoap200 = Color(0xFFE1E3E3);
+  static const Color BlackSoap300 = Color(0xFFBFC3C2);
+  static const Color BlackSoap400 = Color(0xFF949D9B);
+  static const Color BlackSoap500 = Color(0xFF16423C);
+  static const Color BlackSoap600 = Color(0xFF153E39);
+  static const Color BlackSoap700 = Color(0xFF123631);
+  static const Color BlackSoap800 = Color(0xFF0F2C28);
+  static const Color BlackSoap900 = Color(0xFF0A1F1C);
+
+  // Accent Colors
+  static const Color Success100 = Color(0xFF3F845F);
+  static const Color Success80 = Color(0xFF659D7F);
+  static const Color Success60 = Color(0xFF8CB59F);
+  static const Color Success40 = Color(0xFFB2CEBF);
+  static const Color Success20 = Color(0xFFD9E6DF);
+
+  static const Color Warning100 = Color(0xFFE4C65B);
+  static const Color Warning80 = Color(0xFFE9D17C);
+  static const Color Warning60 = Color(0xFFEFDD9D);
+  static const Color Warning40 = Color(0xFFF4E8BD);
+  static const Color Warning20 = Color(0xFFFAF4DE);
+
+  static const Color Error100 = Color(0xFFE25C5C);
+  static const Color Error80 = Color(0xFFE87D7D);
+  static const Color Error60 = Color(0xFFEE9D9D);
+  static const Color Error40 = Color(0xFFF3BEBE);
+  static const Color Error20 = Color(0xFFFF9DEDE);
+  
 
   // Text Colors
   static const Color textPrimary = Color(0xFF333333);

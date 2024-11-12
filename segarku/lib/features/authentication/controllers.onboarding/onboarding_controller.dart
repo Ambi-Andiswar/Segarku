@@ -26,10 +26,4 @@ class OnboardingController extends GetxController{
       pageController.jumpToPage(page);
     }
   }
-
-  /// Update Current Index & jump to the laslt Page
-  void skipPage() {
-    currentPageIndex.value = 2;
-    pageController.jumpTo(2);
-  }
 }

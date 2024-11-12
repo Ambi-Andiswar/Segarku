@@ -1,18 +1,36 @@
 class STexts {
 
   // Global Texts
+  static const String submit = "submit";
+  static const String appName = "Segarku";
+  static const String TContiniue = "Continue";    
 
   // Onboarding Texts
-  static const onBoardingTitele1 = "Antar tepat waktu";
-  static const onBoardingTitele2 = "Kirim kapanpun bisa";
-  static const onBoardingTitele3 = "ini onboarding 3";
+  static const String onBoardingTitele1 = "Belanja Buah & Sayur Jadi Lebih Mudah";
+  static const String onBoardingTitele2 = "Pesan dari Rumah, Hemat Waktu";
+  static const String onBoardingTitele3 = "Kesegaran yang Dijamin Sampai di Rumah";
 
-  static const onBoardingSubTitele1 = "Kurir kami siap mengirim di manapun anda berada";
-  static const onBoardingSubTitele2 = "Anda bisa memesanbuah dan sayur kapanpun dan di manapun";
-  static const onBoardingSubTitele3 = "hallo selamat datang di onboarding 3";
+  static const String onBoardingSubTitele1 = "Temukan kebutuhan harian Anda dengan cepat dan mudah melalui aplikasi kami";
+  static const String onBoardingSubTitele2 = "Nikmati pengiriman langsung ke rumah Anda, cepat dan tepat waktu";
+  static const String onBoardingSubTitele3 = "Kami pastikan semua produk segar dan berkualitas sampai di tangan Anda";
 
   // Home
-  static const homeAppbarTitle = "Selamat Berbelanja";
-  static const homeAppbarSubTitle = "Selalu ada selalu fresh";
+  static const String homeAppbarTitle = "Selamat Berbelanja";
+  static const String homeAppbarSubTitle = "Selalu ada selalu fresh";
+
+  // authentication Form Text
+ static const String submit = "submit";
+ static const String submit = "submit";
+ static const String submit = "submit";
+ static const String submit = "submit";
+ static const String submit = "submit";
+ static const String submit = "submit";
+ static const String submit = "submit";
+ static const String submit = "submit";
+ static const String submit = "submit";
+ static const String submit = "submit";
+ static const String submit = "submit";
+ static const String submit = "submit";
+ static const String submit = "submit"; 
 
 }

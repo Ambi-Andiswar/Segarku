@@ -4,7 +4,7 @@ import 'package:segarku/features/authentication/controllers.onboarding/onboardin
 import 'package:segarku/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:segarku/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:segarku/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
-import 'package:segarku/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
+
 import 'package:segarku/utils/constants/image_strings.dart';
 import 'package:segarku/utils/constants/text_strings.dart';
 
@@ -40,9 +40,7 @@ class OnBoardingScreen extends StatelessWidget {
               ),
             ],
           ),
-
-          // Skip Button
-          const OnboardingSkip(),
+          
           
           // Dot Navigator SmoothPageIndicator
           const OnboardingDotNavigation(),

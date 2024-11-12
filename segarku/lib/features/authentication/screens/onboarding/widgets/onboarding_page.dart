@@ -12,20 +12,31 @@ class OnBoardingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(SSizes.defaultSpace),
-      child: Column(
-        children: [
-          Image(
-            width: SHelperFunctions.screenWidth() * 0.8,
-            height: SHelperFunctions.screenHeight() * 0.6,
-            image: AssetImage(image),
+    return Column(
+      children: [
+        // Bagian Gambar
+        Expanded(
+          flex: 3, // Mengatur proporsi tinggi gambar
+          child: Image.asset(
+            image,
+            fit: BoxFit.contain,
           ),
-          Text(title, style: Theme.of(context).textTheme.headlineMedium, textAlign: TextAlign.center),
-          const SizedBox(height: SSizes.spaceBtwItems),
-          Text(subTitle, style: Theme.of(context).textTheme.bodyMedium, textAlign: TextAlign.center),    
-        ],
-      ),
+        ),
+        // Bagian Teks
+        Expanded(
+          flex: 2, // Mengatur proporsi tinggi teks
+          child: Padding(
+            padding: const EdgeInsets.all(SSizes.defaultSpace),
+            child: Column(
+              children: [
+                Text(title, style: Theme.of(context).textTheme.headlineMedium, textAlign: TextAlign.center),
+                const SizedBox(height: SSizes.spaceBtwSections),
+                Text(subTitle, style: Theme.of(context).textTheme.bodyMedium, textAlign: TextAlign.center),
+              ],
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

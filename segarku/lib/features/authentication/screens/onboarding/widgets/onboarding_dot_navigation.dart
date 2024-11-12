@@ -15,7 +15,7 @@ class OnboardingDotNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = OnboardingController.instance;
-    final dark =  SHelperFunctions.isDarkMode(context);
+    final dark = SHelperFunctions.isDarkMode(context);
 
     return Positioned(
       bottom: SDeviceUtils.getBottomNavigationBarHeight() + 25,
@@ -24,7 +24,21 @@ class OnboardingDotNavigation extends StatelessWidget {
         count: 3,
         controller: controller.pageController,
         onDotClicked: controller.dotNavigationClick,
-        effect: ExpandingDotsEffect(activeDotColor: dark ? SColors.light : SColors.dark, dotHeight: 6),
+        effect: CustomizableEffect(
+          activeDotDecoration: DotDecoration(
+            width: 31, // Lebar dot aktif
+            height: 6, // Tinggi dot aktif
+            color: dark ? SColors.Green100 : SColors.Green800,
+            borderRadius: BorderRadius.circular(4),
+          ),
+          dotDecoration: DotDecoration(
+            width: 6, // Lebar dot lainnya
+            height: 6, // Tinggi dot lainnya
+            color: dark ? SColors.light.withOpacity(0.3) : SColors.Green800.withOpacity(0.3),
+            borderRadius: BorderRadius.circular(4),
+          ),
+          spacing: 6, // Jarak antar dot
+        ),
       ),
     );
   }

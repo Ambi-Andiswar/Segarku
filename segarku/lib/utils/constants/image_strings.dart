@@ -1,8 +1,8 @@
 class SImages {
 
   // App Logos
-  static const String darkAppLogo = "assets/logos/Newlogo.png";
-  static const String lightAppLogo = "assets/logos/Newlogo.png";
+  static const String darkAppLogo = "assets/logos/Logo.png";
+  static const String lightAppLogo = "assets/logos/Logo.png";
 
   // Social Logos
   static const String google = "assets/logos/google.png";
